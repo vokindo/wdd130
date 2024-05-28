@@ -43,8 +43,14 @@ nav a {
 }
 /* Grid Layout for Main and Aside */
 .grid {
-    display: flex;
+    display: grid;
+    align-items: center;
     gap: 20px; /* Add some space between main and aside */
+}
+
+main{
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 /* Heading Styles */
@@ -91,6 +97,9 @@ ul li a:hover {
 /* Aside Styles */
 aside {
     width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: center;
 }
 
