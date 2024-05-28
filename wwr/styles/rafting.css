@@ -1,0 +1,142 @@
+/* Import Google Fonts */
+@import url(''https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #007bff; /* Primary color */
+    --secondary-color: #92acc3; /* Secondary color */
+    --text-color: #333; /* Text color */
+}
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font family */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling headings */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+/* Styling paragraph */
+p {
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Styling footer paragraph */
+footer p {
+    color: var(--secondary-color);
+}
+
+/* Remove underlines from social media links */
+.social-media a {
+    text-decoration: none;
+}
+
+/* Limit entire page width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    height: 400px; /* Set desired height */
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: rgb(16, 15, 15); /* Text color */
+    z-index: 1; /* Ensure the text is on top */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px; /* Adjusted as needed */
+    left: 20px; /* Adjusted as needed */
+    background-color: rgba(241, 230, 230, 0.5); /* Background color with opacity */
+    padding: 20px; /* Added padding for readability */
+    color: white; /* Text color */
+    z-index: 1; /* Ensure the text is on top */
+}
+
+.hero article img {
+    float: right; /* Float the image to the right */
+    margin-left: 10px; /* Add some space between image and text */
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1 200px;
+}
+  
+article:nth-of-type(3) {
+    flex: 3 200px;
+    display: flex;
+    flex-flow: column;
+}
+article:nth-of-type(3) div:first-child {
+    flex: 1 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+button {
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+  
+  header {
+    grid-area: header;
+}
+  
+  article {
+    grid-area: content;
+}
+  
+  aside {
+    grid-area: sidebar;
+}
+  
+  footer {
+    grid-area: footer;
+}
+  
+  
+  
+  
+  
+  

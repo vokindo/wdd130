@@ -1,26 +1,130 @@
-nav{
-    background-color: steelblue;
-    padding: 10px;
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav a{
-    color: white;
+/* CSS Variables for Colors */
+:root {
+    --primary-color: steelblue;
+    --secondary-color: darkblue;
+    --text-color: #333;
+    --background-color: #f0f0f0;
+    --border-color: #ccc;
+    --link-color: white;
+    --hover-color: darkblue;
+}
+
+/* Centering and Max-Width Styles */
+.center-content, header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: var(--link-color);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2rem;
+    font-weight: 700;
+    flex: 1;/* Allow the links to evenly distribute space */
+    text-align: center;/* Center the text within each link */
+}
+/* Grid Layout for Main and Aside */
+.grid {
+    display: flex;
+    gap: 20px; /* Add some space between main and aside */
 }
 
-h1{
-    color: steelblue;
+/* Heading Styles */
+h1 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
 }
 
-img{
-    width: 150;
+/* Image Styles */
+img {
+    float: right;
+    width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--primary-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-p{
+/* Paragraph Styles */
+p {
     padding: 10px;
+}
+
+/* List Styles */
+ul {
+    padding: 10px; /* Add padding to match the paragraph styling */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add margin to list items for spacing */
+}
+
+ul li a {
+    color: var(--primary-color); /* Match link color to theme */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Add transition effect */
+}
+
+ul li a:hover {
+    color: var(--hover-color); /* Change color on hover */
+}
+
+/* Aside Styles */
+aside {
+    width: 20rem;
+    text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
+/* Box Class Styles */
+.box {
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    aside {
+        width: auto;
+        margin: 1rem 0;
+    }
 }
