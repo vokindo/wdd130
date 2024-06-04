@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Victor Okindo">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>HTML and CSS Quiz</title>
+    
+  </head>
+  <body>
+    <h1>HTML and CSS Quiz</h1>
+    <form>
+      <!-- Question 1: Text input -->
+      <div class="form-item">
+        <label for="q1">What does HTML stand for?</label>
+        <input type="text" id="q1" name="q1">
+      </div>
+
+      <!-- Question 2: Textarea -->
+      <div class="form-item">
+        <label for="q2">Explain the box model in CSS:</label>
+        <textarea id="q2" name="q2" rows="4"></textarea>
+      </div>
+
+      <!-- Question 3: Select -->
+      <div class="form-item">
+        <label for="q3">Which tag is used to define a hyperlink in HTML?</label>
+        <select id="q3" name="q3">
+          <option value="" selected disabled>Choose One ...</option>
+          <option value="a">&lt;a&gt;</option>
+          <option value="link">&lt;link&gt;</option>
+          <option value="href">&lt;href&gt;</option>
+        </select>
+      </div>
+
+      <!-- Question 4: Number input -->
+      <div class="form-item">
+        <label for="q4">How many levels of headings does HTML have?</label>
+        <input type="number" id="q4" name="q4" min="1" max="6">
+      </div>
+
+      <!-- Submit button -->
+      <div class="form-item">
+        <button type="submit">Submit Quiz</button>
+      </div>
+    </form>
+  </body>
+</html>
