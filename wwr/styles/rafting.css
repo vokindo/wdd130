@@ -124,7 +124,7 @@ section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    justify-items: center;
+    justify-items: stretch;
 }
 
 .employee figure {
