@@ -113,6 +113,30 @@ section {
     color: var(--primary-color);
     font-weight: bold;
 }
+
+.employee {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.employee figure {
+    margin: 0;
+    text-align: start;
+}
+
+.employee img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.employee figcaption {
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
 /* 
 article {
     flex: 1 200px;
@@ -256,6 +280,11 @@ nav ul li a:hover {
 .history h2 {
     color: var(--primary-color);
     margin-bottom: 20px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
   
   
